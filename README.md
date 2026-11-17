@@ -31,37 +31,24 @@ SafeBox is a secure file storage platform built on a **Zero-Knowledge Architectu
 
 ---
 
-## 📐 System Design Diagrams
+## 📐 System Design & Architecture
 
-### 1. Use Case Diagram
-Defines actor boundaries and permissions between Standard Users and System Administrators.
+All system design diagrams are maintained in the [image/](image/) directory:
 
-![Use Case Diagram](image/image3.png)
-
----
-
-### 2. Class Diagram
-Outlines domain entities (`User`, `Vault`, `SecureFile`, `SharedAccess`, `AuditLog`) and cryptographic services.
-
-![Class Diagram](image/image4.png)
-
----
-
-### 3. Activity Diagram (File Upload Flow)
-Illustrates client-side key derivation, AES-256 encryption, database storage, and audit logging.
-
-![Activity Diagram](image/image5.png)
+- **Use Case Diagram**: Defines actor boundaries and permissions between Standard Users and System Administrators. → [image/image3.png](image/image3.png)
+- **Class Diagram**: Outlines domain entities (`User`, `Vault`, `SecureFile`, `SharedAccess`, `AuditLog`) and cryptographic services. → [image/image4.png](image/image4.png)
+- **Activity Diagram**: Details client-side key derivation, AES-256 encryption, database storage, and audit logging. → [image/image5.png](image/image5.png)
 
 ---
 
 ## 🎨 UI Wireframes (Figma)
 
-UI prototypes are located in the [image/](image/) directory:
+UI prototypes are maintained in the [image/](image/) directory:
 
-- **Auth**: [Login & Register](image/image6.png) | [Forgot Password](image/image7.png)
+- **Authentication**: [Login & Register](image/image6.png) | [Forgot Password](image/image7.png)
 - **Vault & Files**: [User Dashboard](image/image8.png) | [Vault Explorer](image/image9.png) | [Upload Modal](image/image10.png) | [Share Modal](image/image11.png)
 - **Logs & Settings**: [User Activity Log](image/image12.png) | [Profile Settings](image/image13.png)
-- **Admin**: [Admin Dashboard](image/image14.png) | [User Management](image/image15.png) | [Audit Log](image/image16.png)
+- **Admin Governance**: [Admin Dashboard](image/image14.png) | [User Management](image/image15.png) | [Audit Log](image/image16.png)
 
 ---
 
@@ -70,12 +57,12 @@ UI prototypes are located in the [image/](image/) directory:
 ```text
 SE/
 │
-├── image/                                              # UML diagrams and Figma mockups
+├── image/                                              # System diagrams & Figma UI mockups
 │   ├── image3.png                                      # Use Case Diagram
 │   ├── image4.png                                      # Class Diagram
 │   ├── image5.png                                      # Activity Diagram (Upload Flow)
 │   └── image6.png - image16.png                        # Figma UI Prototypes
 │
-├── SE - Project Report Template_Spring 25-26 up.docx   # Full Academic Project Report
+├── SE - Project Report Template_Spring 25-26.docx      # Full Academic Project Report
 └── README.md                                           # Project Documentation
 ```
